@@ -46,5 +46,5 @@ jobs:
 
       - name: Start the app 📤
         run: |
-          pnpm dev
+          pnpm dev &
           npx wait-on --timeout 60000
