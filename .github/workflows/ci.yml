@@ -37,3 +37,14 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+
+      - name: Build the app 🏗
+        run: pnpm build
+
+      - name: Run component tests 🔸
+        run: pnpm test
+
+      - name: Start the app 📤
+        run: |
+          pnpm dev
+          npx wait-on --timeout 60000
