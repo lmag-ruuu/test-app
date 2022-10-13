@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <h1>Hey, its working</h1>
       <Button handleFn={() => console.log("clickado papu")}>Hola xd</Button>
+      <a>a?</a>
     </div>
   );
 }
