@@ -11,8 +11,11 @@
     "coverage": "vitest run --coverage --config ./vitest.config.js"
   },
   "dependencies": {
+    "@babel/core": "^7.19.6",
+    "@emotion/react": "^11.10.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",

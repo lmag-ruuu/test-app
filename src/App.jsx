@@ -8,7 +8,6 @@ function App() {
       <h1>Hey, its working</h1>
       <p>Hola xd</p>
       <Button handleFn={() => console.log("clickado papu")}>Hola xd</Button>
-      <a>a?</a>
     </div>
   );
 }
