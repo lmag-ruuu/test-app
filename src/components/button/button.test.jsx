@@ -27,14 +27,4 @@ describe("button component", () => {
     fireEvent.click(screen.getByTestId(buttonTestId));
     expect(handleClick).toHaveBeenCalledOnce();
   });
-
-  test("should be able to have default style", () => {
-    expect(idtext).toHaveStyle({
-      width: "100%",
-      maxWidth: "380px",
-      height: "40px",
-      backgroundColor: "#B6E06B",
-      color: "rgb(34, 34, 34)",
-    });
-  });
 });

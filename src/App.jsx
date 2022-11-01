@@ -1,14 +1,13 @@
 import React from "react";
-import Button from "./components/button";
-import "./App.css";
+import Button from "./components/button/button";
+import "./scss/style";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <h1>Hey, its working</h1>
-      <p>Hola xd</p>
       <Button handleFn={() => console.log("clickado papu")}>Hola xd</Button>
-    </div>
+    </>
   );
 }
 
