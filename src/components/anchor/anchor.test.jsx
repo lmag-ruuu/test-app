@@ -2,13 +2,11 @@ import React from "react";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, test, expect, vi, beforeEach } from "vitest";
 import Anchor from "./anchor.component";
-import Theme from "../../theme";
 
 describe("anchor component", () => {
   const anchorTestId = "anchor";
   const HREF = "https://www.google.com/";
   let idtext;
-  const handleClick = vi.fn();
 
   beforeEach(() => {
     render(
@@ -24,6 +22,7 @@ describe("anchor component", () => {
   });
 
   test("should be a valid (external) url in anchor component", () => {
-    expect(idtext.href).toMatch(/^(https:|http:|www\.)\S*/gm);
+    console.log(idtext.href);
+    expect(idtext.href).toContain(HREF);
   });
 });
