@@ -1,6 +1,4 @@
 import React from "react";
-import "@testing-library/jest-dom";
-import "jest-styled-components";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, test, expect, vi } from "vitest";
 import CButton from "./button.component";
