@@ -1,14 +1,12 @@
 import React from "react";
+import SButton from "./styled/button.styled";
+import { Theme } from "../../theme";
 
 const CButton = ({ children, handleFn }) => {
   return (
-    <button
-      className="primary-btn"
-      data-testid="button"
-      onClick={() => handleFn()}
-    >
+    <SButton theme={Theme} data-testid="button" onClick={() => handleFn()}>
       {children}
-    </button>
+    </SButton>
   );
 };
 

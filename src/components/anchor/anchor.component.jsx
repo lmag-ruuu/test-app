@@ -1,15 +1,17 @@
 import React from "react";
+import SAnchor from "./styled/anchor.styled";
+import { Theme } from "../../theme";
 
 const Anchor = (props) => {
   return (
-    <a
-      className="primary-anchor"
+    <SAnchor
+      theme={Theme}
       data-testid="anchor"
       href={props.href}
       target={props.target}
     >
       {props.children}
-    </a>
+    </SAnchor>
   );
 };
 
