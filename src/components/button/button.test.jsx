@@ -2,7 +2,7 @@ import React from "react";
 import "@testing-library/jest-dom";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, test, expect, vi } from "vitest";
-import Button from "./button";
+import CButton from "./button.component";
 
 describe("button component", () => {
   const buttonTestId = "button";
@@ -10,7 +10,7 @@ describe("button component", () => {
   const handleClick = vi.fn();
 
   beforeEach(() => {
-    render(<Button handleFn={handleClick}>Hey, click on me</Button>);
+    render(<CButton handleFn={handleClick}>Hey, click on me</CButton>);
     idtext = screen.getByTestId(buttonTestId);
   });
 
