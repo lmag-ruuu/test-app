@@ -1,5 +1,4 @@
 import React from "react";
-import { SButton } from "./button.styled";
 
 const CButton = ({ children, handleFn }) => {
   return (

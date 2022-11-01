@@ -1,0 +1,26 @@
+@import "./colors.scss";
+
+.primary-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 380px;
+  height: 40px;
+  background-color: $color-primary-light;
+  color: $color-background;
+  transition: 0.3s background-color ease;
+  &:hover {
+    background-color: $color-primary-light-hover;
+  }
+}
+
+.primary-anchor {
+  color: $color-background;
+  transition: 0.3s color ease;
+  &:hover,
+  &:active {
+    color: $color-primary;
+  }
+}
