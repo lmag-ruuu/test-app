@@ -4,11 +4,11 @@ For run use
 
 ```
 $ pnpm i
-pnpm dev
+$ pnpm dev
 ```
 
 To start vitest use
 
 ```
-$pnpm test
+$ pnpm test
 ```
