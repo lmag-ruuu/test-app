@@ -7,10 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest --config ./vitest.config.js",
-    "coverage": "vitest run --coverage --config ./vitest.config.js"
+    "test": "vitest --config ./vitest.config.ts",
+    "coverage": "vitest run --coverage --config ./vitest.config.ts"
   },
   "dependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/jest": "^29.2.2",
+    "@types/node": "^18.11.9",
     "jest-styled-components": "^7.1.1",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
@@ -18,12 +21,13 @@
     "react-is": "^18.2.0",
     "styled-components": "^5.3.6",
     "styled-system": "^5.1.5",
+    "typescript": "^4.8.4",
     "wait-on": "^6.0.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@types/react": "^18.0.17",
+    "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "@types/styled-components": "^5.1.26",
     "@vitejs/plugin-react": "^2.1.0",
