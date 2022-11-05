@@ -6,8 +6,17 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "types": [
+      "node",
+      "jest",
+      "@testing-library/jest-dom",
+      "vitest",
+      "jest-styled-components"
+    ]
   },
+  "include": ["src/**/*"],
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Recommended"
 }

@@ -1,11 +1,11 @@
 import React from "react";
+import CButton from "./button.component";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, test, expect, vi } from "vitest";
-import CButton from "./button.component";
 
 describe("button component", () => {
   const buttonTestId = "button";
-  let idtext;
+  let idtext: HTMLButtonElement;
   const handleClick = vi.fn();
 
   beforeEach(() => {
@@ -15,7 +15,7 @@ describe("button component", () => {
 
   test("should be able to render the buttom", () => {
     // assert
-    expect(idtext).toBeInTheDocument();
+    expect(idtext).not.toBeUndefined();
   });
   test("should be able to render based on the children prop", () => {
     //assert

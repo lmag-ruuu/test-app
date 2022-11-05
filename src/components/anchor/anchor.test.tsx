@@ -1,12 +1,12 @@
 import React from "react";
+import Anchor from "./anchor.component";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, test, expect, vi, beforeEach } from "vitest";
-import Anchor from "./anchor.component";
 
 describe("anchor component", () => {
   const anchorTestId = "anchor";
   const HREF = "https://www.google.com/";
-  let idtext;
+  let idtext: HTMLAnchorElement;
 
   beforeEach(() => {
     render(
